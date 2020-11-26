@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" href="../../static/css/style.css">
+    <link href="webjars/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Barcha userlar</title>
+</head>
+<body>
+
+<header class="fixed-top">
+    <a href="/admin" class="btn btn-success">Bosh sahifa</a>
+</header>
+
+<main class="container mt-5" id="root">
+
+    <div  th:each="u: ${users}" class="row text-center d-flex justify-content-center mt-5">
+        <div class="col-md-10 border shadow mt-2 p-3 list_user">
+            <p class="border" th:utext="${u.id+': '+u.username}">Username</p>
+            <input type="hidden" th:value="${u.id}" name="id" th:id="${u.id}">
+            <button th:value="${u.id}" onclick="getEdit(this.value)" class="btn btn-success float-left">Tahrirlash</button>
+            <button class="btn btn-danger float-right">O'chirish</button>
+        </div>
+    </div>
+
+
+</main>
+<footer class="mb-5"></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script th:inline="javascript" th:src="@{/js/admin.js}" src="../../static/js/admin.js"></script>
+<script th:inline="javascript" th:src="@{/js/js.js}" src="../../static/js/js.js"></script>
+</html>

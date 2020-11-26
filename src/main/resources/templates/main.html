@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{/css/style.css}" rel="stylesheet" href="../static/css/style.css">
+    <link href="webjars/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body onload="getusername()" class="container-fluid text-center d-flex justify-content-center">
+<header class="fixed-top">
+    <a class="btn btn-success float-right" id="kabinet" style="display: none">Kabinet</a>
+</header>
+<main class="container mt-5 text-center d-flex justify-content-center row">
+    <div id="name" class="col-8"></div>
+    <div class="col-8" id="btns">
+<!--        <a id="kabinet" href="/login" class="btn-success btn mt-5">Kabinet</a>-->
+        <a class="btn btn-success" id="log" href="/login">Kirish</a>
+    </div>
+</main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script th:inline="javascript" th:src="@{/js/js.js}" src="../static/js/js.js"></script>
+</html>

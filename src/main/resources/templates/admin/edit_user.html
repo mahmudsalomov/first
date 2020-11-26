@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" href="../../static/css/style.css">
+    <link href="webjars/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ma'lumotlarni tahrirlash</title>
+</head>
+<body>
+
+<main class="container text-center d-flex justify-content-center">
+    <div class="row text-center d-flex justify-content-center mt-5">
+        <h3 class="col-md-8 mt-5">User ma'lumotlarini tahrirlash</h3>
+        <input class="form-control col-md-8 mt-3" name="username" id="username" type="text" placeholder="username">
+        <input class="form-control col-md-8 mt-3" name="password" id="password" type="text" placeholder="password">
+        <input class="form-control col-md-8 mt-3" name="email" id="email" type="email" placeholder="email">
+        <input class="form-control col-md-8 mt-3" name="phone" id="phone" type="text" placeholder="phone">
+        <button class="btn btn-success col-md-8 mt-3" type="submit">Saqlash</button>
+
+    </div>
+</main>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script th:inline="javascript" th:src="@{/js/admin.js}" src="../../static/js/admin.js"></script>
+<script th:inline="javascript" th:src="@{/js/js.js}" src="../../static/js/js.js"></script>
+</html>

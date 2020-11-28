@@ -44,6 +44,7 @@ function getrole() {
         }
         else {
             if (response.data==="ADMIN"){
+
                 document.getElementById("kirish").href="/admin";
                 document.getElementById("kirish").textContent="Kabinet"
             } else {

@@ -38,17 +38,17 @@ function getrole() {
     axios.get("/getrole").then(function (response) {
         // console.log(response);
         if(response.data==="USER"){
-            document.getElementById("kirish").href="/user";
+            document.getElementById("kirish").href="https://crazycodeuz.herokuapp.com/user";
             document.getElementById("kirish").textContent="Kabinet"
             // document.getElementById("kabinet").style.display="block";
         }
         else {
             if (response.data==="ADMIN"){
 
-                document.getElementById("kirish").href="/admin";
+                document.getElementById("kirish").href="https://crazycodeuz.herokuapp.com/admin";
                 document.getElementById("kirish").textContent="Kabinet"
             } else {
-                document.getElementById("kirish").href="/login";
+                document.getElementById("kirish").href="https://crazycodeuz.herokuapp.com/login";
                 document.getElementById("kirish").textContent="Kirish"
             }
         }

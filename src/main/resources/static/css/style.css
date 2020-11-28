@@ -2413,7 +2413,7 @@ textarea.form-control {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0.25rem;
+    border-radius: 0.25rem !important;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2442,8 +2442,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a;
+    background-color: #f4623a !important;
+    border-color: #f4623a !important;
 }
 .btn-primary:hover {
     color: #fff;
@@ -5432,8 +5432,6 @@ a.close.disabled {
 .modal-dialog-centered::before {
     display: block;
     height: calc(100vh - 1rem);
-    height: -webkit-min-content;
-    height: -moz-min-content;
     height: min-content;
     content: "";
 }
@@ -5543,8 +5541,6 @@ a.close.disabled {
     }
     .modal-dialog-centered::before {
         height: calc(100vh - 3.5rem);
-        height: -webkit-min-content;
-        height: -moz-min-content;
         height: min-content;
     }
 
@@ -6075,9 +6071,12 @@ a.close.disabled {
 .align-text-top {
     vertical-align: text-top !important;
 }
+.bgcolorsection{
+    background-color: #333333;
+}
 
 .bg-primary {
-    background-color: #333333 !important;
+    background-color: #123456 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10007,7 +10006,7 @@ hr.light {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
-    border-radius: 10rem;
+    border-radius: 10rem !important;
 }
 
 .page-section {

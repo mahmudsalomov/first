@@ -21,6 +21,9 @@ public class UserCourse implements Serializable {
     private Long id;
     private String username;
     private String password;
+    private String firstname;
+    private String lastname;
+    private int rating;
     private String email;
     private String phone;
     private String role;

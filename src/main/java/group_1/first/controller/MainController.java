@@ -25,5 +25,9 @@ public class MainController {
     }
 
 
+    @GetMapping("/test")
+    public String test(){
+        return "api_test";
+    }
 
 }

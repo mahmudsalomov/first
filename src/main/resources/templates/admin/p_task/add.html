@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
-    <link th:href="@{/css/style.css}" rel="stylesheet" href="../../../static/css/style.css">
+    <link th:href="@{/css/admin.css}" rel="stylesheet" href="../../../static/css/admin.css">
     <link rel="stylesheet" href="webjars/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" th:href="@{/richtext/richtext.min.css}" href="../../../static/richtext/richtext.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,20 +14,20 @@
 
 <main class="container text-center d-flex justify-content-center">
 
-    <div class="row text-center d-flex justify-content-center mt-5">
+    <div class="row text-center d-flex justify-content-center mt-2">
         <p class="col-md-8" id="error"></p>
-        <h3 class="col-md-8 mt-5">Maxsus vazifa qo'shish</h3>
+        <h3 class="col-md-8">Maxsus vazifa qo'shish</h3>
         <input class="form-control col-md-8 mt-3" name="username" id="username" type="text" placeholder="username">
         <input class="form-control col-md-8 mt-3" name="title" id="title" type="text" placeholder="title">
         <input class="form-control col-md-8 mt-3" name="rank" id="rank" type="number" placeholder="rank">
         <input class="form-control col-md-8 mt-3" name="permission" id="permission" type="checkbox" placeholder="lastname">
         <input class="form-control col-md-8 mt-3" name="stdin" id="stdin" type="text" placeholder="stdin">
-        <input class="form-control col-md-8 mt-3" name="answer" id="answer" type="text" placeholder="answer">
+        <input class="form-control col-md-8 mt-3 mb-2" name="answer" id="answer" type="text" placeholder="answer">
 
         <textarea class="col-12 mt-2" placeholder="text" name="text" id="text">
         </textarea>
 
-        <button onclick="addPTask()" class="btn btn-success col-md-8 mt-3" type="submit">Qo'shish</button>
+        <button onclick="addPTask()" class="btn btn-success col-md-8 mt-3 mb-3" type="submit">Qo'shish</button>
 
     </div>
 </main>

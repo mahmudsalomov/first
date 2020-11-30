@@ -168,9 +168,9 @@ function getEditPTask(id) {
     axios.get("/admin/api/task/one", {params: {id:id} })
         .then(function (response) {
             let data=JSON.parse(JSON.stringify(response.data));
-            out="<div class=\"row text-center d-flex justify-content-center mt-5\">\n" +
+            out="<div class=\"row text-center d-flex justify-content-center mt-3\">\n" +
                 "        <p class=\"col-md-8\" id=\"error\"></p>\n" +
-                "        <h3 class=\"col-md-8 mt-5\">Maxsus vazifa qo'shish</h3>\n" +
+                "        <h3 class=\"col-md-8\">Maxsus vazifa qo'shish</h3>\n" +
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"username\" id=\"username\" type=\"text\" placeholder=\"username\" value='"+data.username+"'>\n" +
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"title\" id=\"title\" type=\"text\" placeholder=\"title\" value='"+data.title+"'>\n" +
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"rank\" id=\"rank\" type=\"number\" placeholder=\"rank\" value='"+data.rank+"'>\n" +
@@ -204,9 +204,9 @@ function editPTask(id) {
     let answer=document.getElementById("answer").value;
 
     let permission=document.getElementById("permission").checked;
-    let lastResult=document.getElementById("lastResult").checked;
-    let lastCode=document.getElementById("lastCode").checked;
-    let solve=document.getElementById("solve").checked;
+    let lastResult=document.getElementById("lastResult").value;
+    let lastCode=document.getElementById("lastCode").value;
+    let solve=document.getElementById("solve").value;
     // if ()
     // permission = document.getElementById("permission").value === "checked";
 

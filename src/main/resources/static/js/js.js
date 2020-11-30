@@ -40,11 +40,12 @@ function getrole() {
         if(response.data==="USER"){
             document.getElementById("kirish").href="/user";
             document.getElementById("kirish").textContent="Kabinet"
+            document.getElementById("chiqish").style.display="";
             // document.getElementById("kabinet").style.display="block";
         }
         else {
             if (response.data==="ADMIN"){
-
+                document.getElementById("chiqish").style.display="";
                 document.getElementById("kirish").href="/admin";
                 document.getElementById("kirish").textContent="Kabinet"
             } else {

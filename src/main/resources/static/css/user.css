@@ -1,0 +1,53 @@
+table{
+    margin-top: 5px;
+}
+
+
+.about{
+    border: 1px solid red;
+    width: 50%;
+    height: 300px;
+}
+
+.homework{
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+}
+
+.divout{
+    width: 30%;
+    display: inline;
+
+}
+.divin{
+    border: 1px solid;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 2px;
+}
+.text{
+    margin-top: 0%;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.noans{
+    background-color: red;
+}
+.yesans{
+    background-color: green;
+}
+
+#root{
+    display: block;
+}
+#root1{
+    display:none;
+}
+#root2{
+    width: 100%;
+    display: none;
+}

@@ -49,6 +49,7 @@ function getrole() {
                 document.getElementById("kirish").href="/admin";
                 document.getElementById("kirish").textContent="Kabinet"
             } else {
+                
                 document.getElementById("kirish").href="/login";
                 document.getElementById("kirish").textContent="Kirish"
             }

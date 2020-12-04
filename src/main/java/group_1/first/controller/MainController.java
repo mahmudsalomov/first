@@ -24,6 +24,10 @@ public class MainController {
         return "user/user";
     }
 
+    @GetMapping("/about")
+    public String about(){
+        return "reklom/koproq_bilish";
+    }
 
     @GetMapping("/test")
     public String test(){

@@ -111,10 +111,12 @@
     var codeedit=document.getElementById("codeedit");
     var editor = CodeMirror.fromTextArea(codeedit, {
 
-        lineNumbers: true
+        lineNumbers: true,
+        mode: "htmlmixed"
+
     });
 </script>
-<script th:src="@{/js/mirror.js}" th:inline="javascript" src="../static/js/mirror.js"></script>
+<script th:src="@{/js/mirror.js}" th:inline="javascript" type="text/x-julia" src="../static/js/mirror.js"></script>
 <script th:src="@{/js/user.js}" th:inline="javascript" src="../static/js/user.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

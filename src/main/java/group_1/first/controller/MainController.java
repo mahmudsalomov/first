@@ -29,6 +29,11 @@ public class MainController {
         return "reklom/koproq_bilish";
     }
 
+    @GetMapping("/qani_ketdik")
+    public String qani_ketdik(){
+        return "reklom/qani_ketdik";
+    }
+
     @GetMapping("/test")
     public String test(){
         return "api_test";

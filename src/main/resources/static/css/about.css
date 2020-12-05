@@ -1,0 +1,42 @@
+body{
+    background-image: url("../img/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.container{
+    background: linear-gradient(to bottom, rgba(25,25,25, 0.5) 0%, rgba(92, 77, 66, 0.5) 100%);
+}
+.textME{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+
+
+.textME1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    font-family: serif;
+
+}
+
+.lister{
+    list-style-type: disc;
+}
+
+.img{
+    text-align: center;
+}
+
+.img img{
+    position: relative;
+}
+
+.nav-link{
+    font-size: 25px;
+}

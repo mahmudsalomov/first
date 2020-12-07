@@ -18,7 +18,7 @@ function personalReyting(){
     document.getElementById("root2").style.display="none";
 }
 
-// function resultArea(){
-//     result.innerText=codeedit.value;
-//     console.log(editor.getValue())
-// }
+function resultArea(){
+    result.innerText=codeedit.value;
+    console.log(editor.getValue())
+}

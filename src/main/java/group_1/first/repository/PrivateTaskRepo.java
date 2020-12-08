@@ -11,4 +11,5 @@ import java.util.List;
 public interface PrivateTaskRepo extends JpaRepository<PrivateTask,Long> {
 
     List<PrivateTask> findAllByOrderByIdAsc();
+    List<PrivateTask> findAllByUsername(String username);
 }

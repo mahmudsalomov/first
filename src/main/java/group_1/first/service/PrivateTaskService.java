@@ -28,6 +28,11 @@ public class PrivateTaskService {
         return privateTaskRepo.findById(id).orElseThrow(() -> new EntityNotFoundException(Integer.toString(Math.toIntExact(id))));
     }
 
+    public List<PrivateTask> findAllByUsername(String username){
+        return privateTaskRepo.findAllByUsername(username);
+    }
+
+
 
 
 }

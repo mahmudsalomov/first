@@ -6,6 +6,7 @@ function add() {
     let lastname=document.getElementById("lastname").value;
     let email=document.getElementById("email").value;
     let phone=document.getElementById("phone").value;
+    let groupName=document.getElementById("groupName").value;
 
     if (username===""||password===""){
         document.getElementById("error").textContent="Username va password bo'sh bo'lmasligi kerak!";
@@ -18,7 +19,8 @@ function add() {
             lastname: lastname,
             rating: 0,
             email: email,
-            phone: phone
+            phone: phone,
+            groupName: groupName
         };
         axios.post("/admin/api/add", data)
             .then(function (response) {
@@ -61,6 +63,7 @@ function getEdit(id) {
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"rating\" id=\"rating\" type=\"number\" placeholder=\"rating\"  value='"+data.rating+"'>\n" +
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"email\" id=\"email\" type=\"email\" placeholder=\"email\"  value='"+data.email+"'>\n" +
                 "        <input class=\"form-control col-md-8 mt-3\" name=\"phone\" id=\"phone\" type=\"text\" placeholder=\"phone\"  value='"+data.phone+"'>\n" +
+                "        <input class=\"form-control col-md-8 mt-3\" name=\"group\" id=\"groupName\" type=\"text\" placeholder=\"groupName\"  value='"+data.groupName+"'>\n" +
                 "        <button onclick='edit(this.value)' class=\"btn btn-success col-md-8 mt-3\" type=\"submit\" value="+data.id+">Saqlash</button>\n" +
                 "        <a href='/admin/all' class=\"btn btn-success col-md-8 mt-3\" type=\"submit\">Qaytish</a>\n" +
                 "\n" +

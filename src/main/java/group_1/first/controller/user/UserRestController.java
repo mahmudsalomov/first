@@ -20,6 +20,12 @@ public class UserRestController {
         return ResponseEntity.ok(Methods.generate(s));
     }
 
+    @GetMapping("my")
+    public ResponseEntity my(){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return ResponseEntity.ok(userService.findByUsername(authentication.getName()));
+    }
+
     @GetMapping("tasks")
     public ResponseEntity tasks(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

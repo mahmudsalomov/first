@@ -34,6 +34,10 @@ public class UserService {
         return userRepository.findById(id).orElseThrow(() -> new EntityNotFoundException(Integer.toString(Math.toIntExact(id))));
     }
 
+    public UserCourse findByUsername(String username){
+        return userRepository.findByUsername(username);
+    }
+
     public List<UserCourse> getAll(){
         return userRepository.findAll();
     }
